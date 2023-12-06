@@ -25,17 +25,17 @@ type SDC struct {
 }
 
 type Message struct {
-	Header		*[]Header		`json:"Header"`
-	Inspection	*[]Inspection	`json:"Inspection"`
+	Header     *Header       `json:"Header"`
+	Inspection *[]Inspection `json:"Inspection"`
 }
 
 type Header struct {
-	InspectionLot       int		`json:"InspectionLot"`
-	IsMarkedForDeletion *bool	`json:"IsMarkedForDeletion"`
+	InspectionLot       int   `json:"InspectionLot"`
+	IsMarkedForDeletion *bool `json:"IsMarkedForDeletion"`
 }
 
 type Inspection struct {
-	InspectionLot		int		`json:"InspectionLot"`
-	Inspection  		int		`json:"Inspection"`
-	IsMarkedForDeletion *bool	`json:"IsMarkedForDeletion"`
+	InspectionLot       int   `json:"InspectionLot"`
+	Inspection          int   `json:"Inspection"`
+	IsMarkedForDeletion *bool `json:"IsMarkedForDeletion"`
 }
